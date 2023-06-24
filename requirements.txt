@@ -1,0 +1,9 @@
+flask
+omegaconf
+IPython
+torch
+silero
+numpy
+scipy
+OmegaConf
+wheel

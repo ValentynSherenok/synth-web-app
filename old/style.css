@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Roboto Mono';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(RobotoMono.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(Roboto.woff2) format('woff2');
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+}
+
+:root{
+    --primary-text-color: #fff;
+    --primary-color: #8774e1;
+    --primary-color-light: #9f92e0;
+    --primary-color-dark: #6f5add;
+    --primary-color-gray: #58536e;
+    --secondary-text-color: #aaa;
+    --surface-color: #212121;
+    --light-primary-color: rgb(143, 44, 44);
+}
+
+
+:root{
+    --primary-color-: #00897b;
+    --primary-color-dark: #00564d;
+    --surface-color: #282828;
+    --a: #363636;
+    --secondary-text-color: #969696;
+    --primary-text-color: #fff;
+}
+
+body{
+    background-color: var(--surface-color);
+    color: var(--primary-text-color);
+}
+
+
+.whole{
+    width: 512px;
+    height: 60%;
+}
+
+h4 {
+    font-size: 2rem;
+    line-height: 110%;
+    margin: 22px 0 14px;
+}
+
+.subtitle{
+    color: var(--secondary-text-color);
+    line-height: 1.35;
+}
+
+.btn-primary{
+    cursor: pointer;
+    /* font-weight: var(--font-weight-bold); */
+    height: 45px;
+    position: relative;
+    text-align: center;
+    /* width: 100%; */
+    width: 200px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    overflow: hidden;
+    padding: 0px;
+    border-radius: 10px;
+
+    transition: 0.5s;
+}
+
+.btn-color-primary {
+    background: var(--primary-color);
+    color: var(--primary-text-color);
+}
+
+.btn-color-primary:hover{
+    background: var(--primary-color-light);
+}
+
+.btn-color-primary:active{
+    background: var(--primary-color-dark);
+}
+
+.btn-color-primary:disabled{
+    background: var(--primary-color-gray);
+}
+
+

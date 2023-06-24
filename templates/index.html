@@ -1,0 +1,70 @@
+<html>
+    <body>
+        <link rel="stylesheet" href="https://unpkg.com/98.css">
+        <style>
+            .element{
+                padding-bottom: 5px;
+            }
+            body{
+                background-color: #018281;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .whole{
+                margin: auto;
+                width: 50%;
+            }
+        </style>
+    </body>
+    <body>
+        <div class="window whole" style="width: 400px">
+            <div class="title-bar">
+              <div class="title-bar-text">Service for synthesizing sound using text</div>
+              <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+              </div>
+            </div>
+            <div class="window-body">
+                <div class="field-row-stacked element" style="width: 100%">
+                    <label for="text24">Text for synthesis</label>
+                    <textarea id="text24" rows="8"></textarea>
+                </div>
+    
+                <div class="element">
+                    <select id="flex" style="width: 100%">
+                        <option>ua - mykyta</option>
+                        <option>ua - random</option>
+                        <option>en - viktor</option>
+                        <option>en - random</option>
+                    </select>
+                </div>
+    
+                <div class="element">
+                    <button id="doit" style="width: 100%">Synth</button>
+                </div>
+
+                <div class="element">
+                    <button id="button_play" disabled>Play</button>
+                    <button id="button_stop" disabled>Stop</button>
+                    <button id="button_download" disabled>Download</button>
+                    <div class="field-row" style="width: 100%;padding-top: 8px;">
+                        <label for="range26">Volume:</label>
+                        <input id="range26" type="range" min="0" max="10" value="10" />
+                    </div>
+                </div>
+
+                <div class="element">
+                    <audio id="audio" controls autoplay hidden></audio>
+                </div>
+
+                <div class="status-bar">
+                    <p class="status-bar-field" id="status-bar">Status: Idle</p>
+                </div>
+            </div>
+        </div>
+        <script src="{{ url_for('static', filename='script.js') }}"></script>	
+    </body>
+</html>

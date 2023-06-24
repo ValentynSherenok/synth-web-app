@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+	<title>FlaskAp2p</title>
+	<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+	
+</head>
+<body>
+    <div class="whole">
+	    <h4>Простий сервіс для синтезації звуку з тексту</h1>
+	    <h3 id="message" class="subtitle">Синтезація звуку</h3>
+	    <input id="text" />
+
+		<button id="speak-button" class="btn-primary btn-color-primary rp">
+			<div class="c-ripple"></div>
+			<span class="i18n">Згенерувати</span>
+		</button>
+
+	    <audio id="audio" controls autoplay hidden></audio>
+	</div>
+	<script src="{{ url_for('static', filename='script.js') }}"></script>	
+</body>
+</html>
